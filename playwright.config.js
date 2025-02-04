@@ -38,7 +38,7 @@ export default defineConfig({
         headless: false,
       },
     },
-    // ✅ Mobile Testing: Android (Pixel 5)
+
     {
       name: 'Pixel 5',
       use: { 
@@ -50,7 +50,7 @@ export default defineConfig({
         userAgent: 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Mobile Safari/537.36',
       },
     },
-    // ✅ Mobile Testing: iPhone 13 (iOS)
+
     {
       name: 'iPhone 13',
       use: { 
