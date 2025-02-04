@@ -37,5 +37,31 @@ npm install
 ### **Install Playwright Browsers**
 npx playwright install
 
-### **Install Playwright Browsers**
+### **Run Tests for Web Browsers**
+npx playwright test --project="Google Chrome"
+npx playwright test --project="firefox"
+npx playwright test --project="webkit"
 
+### **Run Tests for Mobile (Android & iOS)**
+npx playwright test --project="Pixel 5"
+npx playwright test --project="iPhone 13"
+
+### **Run All Tests**
+npx playwright test
+
+### **View Test Reports**
+npx playwright show-report
+
+### **Directory Structure**
+📂 Playwright_Automation_for_Web_and_Mobile
+ ┣ 📂 tests
+ ┃ ┗ 📜 studydrive-onboarding.spec.js  # Test script
+ ┣ 📜 playwright.config.js             # Playwright settings
+ ┣ 📜 package.json                     # Node dependencies
+ ┣ 📜 README.md                        # Documentation
+
+
+### **Future Enhancements**
+- API Testing: Automate API responses for backend validation.
+- Performance Testing: Measure page load time & responsiveness.
+- Parallel Execution in CI/CD: Run tests efficiently using GitHub Actions.
