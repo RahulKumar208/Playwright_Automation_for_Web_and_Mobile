@@ -16,8 +16,8 @@ test.describe('Studydrive Onboarding', () => {
     await page.locator('xpath=(//button[@data-testid="top-bar-guest_btn-signup"])').click();
 
     
-    await page.locator('xpath=//input[@data-testid="auth-form-username-input"]').fill('qatestingautomation5@gmail.com');
-    await page.locator('xpath=//input[@data-testid="auth-form-password-input"]').fill('Qwerty123$');
+    await page.locator('xpath=//input[@data-testid="auth-form-username-input"]').fill('{email_address}');
+    await page.locator('xpath=//input[@data-testid="auth-form-password-input"]').fill('{password}');
 
     // Click Register
     await page.locator('xpath=//*[@data-testid="auth-form_btn-register"]').click();
