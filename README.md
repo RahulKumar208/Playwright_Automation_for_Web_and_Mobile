@@ -37,6 +37,20 @@ npm install
 ### **Install Playwright Browsers**
 npx playwright install
 
+## **Email Registration and Verification**
+
+Before running the tests, make sure to provide a valid Gmail address and password for the user registration and email verification process.
+
+1. **Update the Test Script**: In the test script (e.g., `studydrive-onboarding.spec.js`), update the `email_address` and `password` fields with valid credentials for registration:
+
+    ```javascript
+    const email_address = 'your-email@gmail.com';
+    const password = 'your-password';
+    ```
+2. **Email Verification**: After completing the registration, an email will be sent to the provided address. Follow the instructions in the email to verify the account before proceeding with further actions like course joining or document upload.
+
+3. **Security Note**: For security reason not sharing credentials and not shared publicly. 
+
 ### **Run Tests for Web Browsers**
 npx playwright test --project="Google Chrome"
 npx playwright test --project="firefox"
