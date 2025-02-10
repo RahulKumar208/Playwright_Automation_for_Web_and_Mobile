@@ -59,7 +59,7 @@ public class StudyDriveTest {
 
         //  Enter Email
         WebElement emailInput = driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/editTextConstraintLayout\"]"));
-        emailInput.sendKeys("qatestingautomation5@gmail.com");
+        emailInput.sendKeys("your_email_address");
       
 
 
@@ -68,7 +68,7 @@ public class StudyDriveTest {
 
         // Enter Password
         WebElement passwordInput = driver.findElement(AppiumBy.xpath("(//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/editTextConstraintLayout\"])[2]"));
-        passwordInput.sendKeys("Qwerty123$");
+        passwordInput.sendKeys("your_password");
 
         driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"]")).click();
 
