@@ -45,98 +45,98 @@ public class StudyDriveTest {
 
             // Clicking the Accept button if visible
             acceptCookies.click();
-            System.out.println("✅ Cookie consent accepted.");
+            System.out.println(" Cookie consent accepted.");
         } catch (Exception e) {
-            System.out.println("⚠️ No cookie consent pop-up detected, continuing...");
+            System.out.println(" No cookie consent pop-up detected, continuing...");
         }
         
         System.out.println("Next Step");
 
-        // ✅ Click "Signup" Button
+        // Click "Signup" Button
         driver.findElement(AppiumBy.xpath("(//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"])[3]")).click();
         
 
 
-        // ✅ Enter Email
+        //  Enter Email
         WebElement emailInput = driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/editTextConstraintLayout\"]"));
         emailInput.sendKeys("qatestingautomation5@gmail.com");
-      //
+      
 
 
         driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"]")).click();
         
 
-        // ✅ Enter Password
+        // Enter Password
         WebElement passwordInput = driver.findElement(AppiumBy.xpath("(//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/editTextConstraintLayout\"])[2]"));
         passwordInput.sendKeys("Qwerty123$");
 
         driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"]")).click();
 
-        // ✅ Choose Display Name
+        // Choose Display Name
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/textViewButtonIcon\"]")).click();
 
-        // ✅ Select "Student" as user type
+        //  Select "Student" as user type
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"At University\"]")).click();
       
 
 
-        // ✅ Enter University Name
+        //  Enter University Name
         WebElement universityInput = driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"de.veedapp.veed:id/textInputEditText\"]"));
         universityInput.sendKeys("987654321");
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/titleTextView\"]")).click();
 
-        // ✅ Select Study Major
+        // Select Study Major
         driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"de.veedapp.veed:id/textInputEditText\" and @text=\"Select field of studies\"]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/titleTextView\" and @text=\"Mathematics, Computer Sciences & Natural Sciences\"]")).click();
 
-        // ✅ Select Study Program
+        //  Select Study Program
         driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"de.veedapp.veed:id/textInputEditText\" and @text=\"Select study program\"]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/titleTextView\" and @text=\"Computer Engineering\"]")).click();
 
         driver.findElement(AppiumBy.xpath("//androidx.cardview.widget.CardView[@resource-id=\"de.veedapp.veed:id/notSureCardView\"]")).click();
 
         
-        // ✅ Select Semester
+        //  Select Semester
         driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"de.veedapp.veed:id/textInputEditText\"]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/titleTextView\" and @text=\"Winter 2024/25\"]")).click();
 
-        // ✅ Continue
+        //  Continue
         driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"]")).click();
 
-        // ✅ Navigate to "Courses"
+        //  Navigate to "Courses"
         driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@resource-id=\"de.veedapp.veed:id/navImageViewUnselected\"])[3]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/courseNameTextView\" and @text=\"microeconomics\"]")).click();
 
-        // ✅ Join "Microeconomics" Course
+        //  Join "Microeconomics" Course
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/textViewButtonIcon\"]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.ImageView[@resource-id=\"de.veedapp.veed:id/actionButtonIcon\"]")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.ImageView[@resource-id=\"de.veedapp.veed:id/documentButton\"]")).click();
 
-        // ✅ Upload File
+        //  Upload File
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"de.veedapp.veed:id/textViewButtonIcon\" and @text=\"Browse my files\"]")).click();
         driver.findElement(AppiumBy.className("android.widget.EditText")).sendKeys("C:\\Users\\pc\\Downloads\\studydrive_testing.pdf");
 
-        // ✅ Select "Semester"
+        //  Select "Semester"
       /*  driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Semester']")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Winter 2024/25']")).click();
 
-        // ✅ Select "Document Type"
+        //  Select "Document Type"
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Document Type']")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Other']")).click();
 
-        // ✅ Select "Language"
+        //  Select "Language"
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Language']")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='English']")).click();
 
-        // ✅ Select Course
+        //  Select Course
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Enter course name']")).click();
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Microeconomics']")).click();
 */
-        // ✅ Enter Description
+        //  Enter Description
         WebElement descriptionInput = driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"de.veedapp.veed:id/textInputEditText\" and @text=\"Description\"]"));
         descriptionInput.sendKeys("Test document upload.");
 
-        // ✅ Click "Upload and Earn Rewards"
+        //  Click "Upload and Earn Rewards"
         driver.findElement(AppiumBy.xpath("(//android.view.ViewGroup[@resource-id=\"de.veedapp.veed:id/buttonConstraintLayout\"])[1]")).click();
 
         
