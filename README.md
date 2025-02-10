@@ -1,4 +1,4 @@
-# Playwright Automation Testing for Web and Mobile
+# Playwright Automation Testing (Web/Mobile) And Appium with Eclipse for Android App Automation
 
 This repository contains an end-to-end test automation suite for the Studydrive platform using **Playwright**. The tests cover user onboarding, course joining, document uploading, and user interactions on both web and mobile applications.
 
